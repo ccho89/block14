@@ -41,6 +41,15 @@ const array = "hello";
 let numVowels = 0;
 let numConsonants = 0;
 
+const vowels = 'aeiou';
+
 for (let i = 0; i < array.length; i++) {
-    const char == array[i];
+    const char = array[i];
+
+  if (vowels.includes(char)) {
+    numVowels++;
+  } else {
+    numConsonants++;
+  }
 }
+console.log(`${array} has ${numConsonants} consonants and ${numVowels} vowels`);
